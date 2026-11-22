@@ -29,7 +29,7 @@ do                                            \
 #define da_append(da, item, cap)                       \
 do                                                     \
 {                                                      \
-if ((cap) >= (da)->capacity)                            \
+if ((cap) >= (da)->capacity)                           \
 {                                                      \
 (da)->capacity *= 2;                                   \
 (da)->items = realloc((da)->items, (da)->capacity);    \
